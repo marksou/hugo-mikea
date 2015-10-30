@@ -21,12 +21,12 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     - arjen/hugo-build@1.6.
-        version:0.14
-        theme:hugo-creative-theme
+        version: "0.14"
+        theme: hugo-creative-theme
 Deploy:
     steps:
     -lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
-        domain:hugo-wercker.ig.nore.me
+        domain: www.golifeandsoul.com
         basedir: public
-        
+
