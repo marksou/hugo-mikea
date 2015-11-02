@@ -24,9 +24,9 @@ build:
             version: "0.14"
             theme: hugo-creative-theme
 deploy:
+    steps:
         - install-packages:
             packages: git ssh-client
-    steps:
         - leipert/git-push:
             gh_oauth: $GIT_TOKEN
             repo: marksou/marksou.github.io
